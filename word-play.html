@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/word-styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/word-scripts.js"></script>
+    <title>Word Play</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Word Play</h1>
+      <form id="user-input">
+        <div class="form-group">
+          <label for="sentence">Enter your sentence below!</label>
+          <input id="sentence" class="form-control" type="text">
+        </div>
+
+        <button class="btn" type="submit">Submit!</button>
+      </form>
+
+      <div id="result">
+        <h2>Here's your new and improved sentence below!</h2>
+        <p><span class="sentence"></span></p>
+      </div>
+    </div>
+  </body>
+</html>
