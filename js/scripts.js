@@ -4,11 +4,18 @@ $(document).ready(function() {
 
     var deckCards = [];
 
-    suits.forEach(function(suit) {
-      ranks.forEach(function(rank) {
-        deckCards.push(rank + " " + suit)
-      });
-    });
+    //suits.forEach(function(suit) {
+      //ranks.forEach(function(rank) {
+        //deckCards.push(rank + " " + suit)
+      //});
+    //});
+
+    //for loop replacement
+    for (var s = 0; s < suits.length; s += 1) {
+      for (var r = 0; r < ranks.length; r += 1) {
+        deckCards.push(ranks[r] + " " + suits[s]);
+      }
+    }
 
     deckCards.map(function(card) {
       $("#output ul").append("<li>" + card + "</li>");
